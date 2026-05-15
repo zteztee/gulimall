@@ -12,7 +12,7 @@ pipeline {
 
                     sh 'echo $PROJECT_VERSION'
                     sh 'echo $PROJECT_NAME'
-                    git(url: 'https://gitee.com/zang-tianen/gulimall.git', credentialsId: 'gitee', branch: 'master', changelog: true, poll: false)
+                    git(url: 'https://github.com/zteztee/gulimall.git', credentialsId: "$GIT_CREDENTIAL_ID", branch: 'master', changelog: true, poll: false)
                     sh "echo 正在完整编译项目"
                     sh "echo 项目名称：$PROJECT_NAME"
                     sh "mvn -gs `pwd`/mvn-settings.xml clean install -Dmaven.test.skip=true"
@@ -117,7 +117,7 @@ pipeline {
               input(id: 'release-image-with-tag', message: '发布当前版本镜像?')
                 container('maven') {
                   withCredentials([usernamePassword(
-                      credentialsId: GITEE_CREDENTIAL_ID,
+                      credentialsId: GIT_CREDENTIAL_ID,
                       usernameVariable: 'GIT_USERNAME',
                       passwordVariable: 'GIT_PASSWORD'
                   )]) {
@@ -126,7 +126,7 @@ pipeline {
                           git config --global user.email "958394162@qq.com"
                           git config --global user.name "958394162@qq.com"
                           git tag -a $PROJECT_VERSION -m "$PROJECT_VERSION"
-                          git push http://$GIT_USERNAME:$GIT_PASSWORD@gitee.com/$GITEE_ACCOUNT/gulimall.git --tags --ipv4
+                          git push http://$GIT_USERNAME:$GIT_PASSWORD@github.com/$GIT_ACCOUNT/gulimall.git --tags --ipv4
                       '''
                   }
               }
@@ -143,11 +143,11 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIAL_ID = 'dockerhub-id'
-        GITEE_CREDENTIAL_ID = 'gitee'
+        GIT_CREDENTIAL_ID = 'github-id'
         KUBECONFIG_CREDENTIAL_ID = 'demo-kubeconfig'
         REGISTRY = 'docker.io'
         DOCKERHUB_NAMESPACE = 'zte020415'
-        GITEE_ACCOUNT = '958394162@qq.com'
+        GIT_ACCOUNT = 'zteztee'
         SONAR_CREDENTIAL_ID = 'sonar-qube'
         BRANCH_NAME = 'master'
     }

@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: gulimall
 resources:
   - deployment.yaml
-  - service.yaml
+#  - service.yaml
 
 images:
   - name: docker.io/zte020415/gulimall-cart
