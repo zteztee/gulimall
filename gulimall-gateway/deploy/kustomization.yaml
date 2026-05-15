@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: gulimall
+resources:
+  - deployment.yaml
+  - service.yaml
+
+images:
+  - name: docker.io/zte020415/gulimall-gateway
+    newName: docker.io/zte020415/gulimall-gateway
+    newTag: latest # 这个会被 CD 步骤自动替换

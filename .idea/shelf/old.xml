@@ -1,0 +1,144 @@
+<changelist name="old" date="1778875625957" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/old/shelved.patch" />
+  <option name="DESCRIPTION" value="old" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="db.rar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/db.rar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-auth-server/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-cart/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper1.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-common/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper2.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-coupon/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper3.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-gateway/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper4.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-member/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper5.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-order/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper6.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-product/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper7.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-search/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper8.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-seckill/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper9.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-third-party/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper10.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="gulimall-ware/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/maven-wrapper11.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/fonts/DroidSans.ttf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/DroidSans.ttf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/fonts/DroidSans-Bold.ttf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/DroidSans-Bold.ttf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/collapse.gif" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/collapse.gif" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/expand.gif" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/expand.gif" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/explorer_icons.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/explorer_icons.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/favicon.ico" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/favicon.ico" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/favicon-16x16.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/favicon-16x16.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/favicon-32x32.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/favicon-32x32.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/logo_small.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/logo_small.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/pet_store_api.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/pet_store_api.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/throbber.gif" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/throbber.gif" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/images/wordnik_api.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/wordnik_api.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/favicon-16x16.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/favicon-16x161.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/swagger/favicon-32x32.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/favicon-32x321.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="renren-fast/src/main/resources/static/favicon.ico" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/old/favicon1.ico" />
+  </binary>
+</changelist>
