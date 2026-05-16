@@ -75,7 +75,7 @@ pipeline {
                             /kaniko/executor \
                             --context ./$PROJECT_NAME \
                             --dockerfile Dockerfile \
-                            --destination $REGISTRY/$DOCKERHUB_NAMESPACE/$PROJECT_NAME:SNAPSHOT-$BRANCH_NAME-$BUILD_NUMBER \
+                            --destination $REGISTRY/$DOCKERHUB_NAMESPACE/$PROJECT_NAME:SNAPSHOT-$BRANCH_NAME-$PROJECT_VERSION \
                             --verbosity info \
                             --skip-tls-verify
                         fi
