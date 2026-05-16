@@ -85,53 +85,53 @@ pipeline {
         }
     }
 
-      stage ('部署到k8s') {
-        steps {
-          input(id: "deploy-to-dev-$PROJECT_NAME",message:"是否将 $PROJECT_NAME 部署到集群中?")
+//       stage ('部署到k8s') {
+//         steps {
+//           input(id: "deploy-to-dev-$PROJECT_NAME",message:"是否将 $PROJECT_NAME 部署到集群中?")
 //           kubernetesDeploy(config: "$PROJECT_NAME/deploy/**",enableConfigSubstitution: true,
 //             kubeconfigId: "$KUBECONFIG_CREDENTIAL_ID"
 //           )
-
-          container('base') {
-                      withCredentials([usernamePassword(credentialsId : 'gitee' ,passwordVariable : 'PASS' ,usernameVariable : 'USER')]) {
-                        sh '''ks app update --app-name gulimall-cart-cd \
-           --app-namespace gulimallqvp9f \
-           --name docker.io/zte020415/gulimall-cart \
-           --newName $REGISTRY/$DOCKERHUB_NAMESPACE/$PROJECT_NAME \
-           --newTag $PROJECT_VERSION \
-           --git-password $PASS --git-username=$USER \
-           --git-target-branch master'''
-                      }
-
-                    }
-
-        }
-      }
-         stage ('发布版本') {
-          when {
-              expression {
-                  params.PROJECT_VERSION != null && params.PROJECT_VERSION.startsWith("v")
-              }
-          }
-           steps {
-              input(id: 'release-image-with-tag', message: '发布当前版本镜像?')
-                container('maven') {
-                  withCredentials([usernamePassword(
-                      credentialsId: GIT_CREDENTIAL_ID,
-                      usernameVariable: 'GIT_USERNAME',
-                      passwordVariable: 'GIT_PASSWORD'
-                  )]) {
-                      sh '''
-                          git config --global --add safe.directory '*'
-                          git config --global user.email "958394162@qq.com"
-                          git config --global user.name "958394162@qq.com"
-                          git tag -a $PROJECT_VERSION -m "$PROJECT_VERSION"
-                          git push http://$GIT_USERNAME:$GIT_PASSWORD@github.com/$GIT_ACCOUNT/gulimall.git --tags --ipv4
-                      '''
-                  }
-              }
-          }
-      }
+//
+//           container('base') {
+//                       withCredentials([usernamePassword(credentialsId : 'gitee' ,passwordVariable : 'PASS' ,usernameVariable : 'USER')]) {
+//                         sh '''ks app update --app-name gulimall-cart-cd \
+//            --app-namespace gulimallqvp9f \
+//            --name docker.io/zte020415/gulimall-cart \
+//            --newName $REGISTRY/$DOCKERHUB_NAMESPACE/$PROJECT_NAME \
+//            --newTag $PROJECT_VERSION \
+//            --git-password $PASS --git-username=$USER \
+//            --git-target-branch master'''
+//                       }
+//
+//                     }
+//
+//         }
+//       }
+//          stage ('发布版本') {
+//           when {
+//               expression {
+//                   params.PROJECT_VERSION != null && params.PROJECT_VERSION.startsWith("v")
+//               }
+//           }
+//            steps {
+//               input(id: 'release-image-with-tag', message: '发布当前版本镜像?')
+//                 container('maven') {
+//                   withCredentials([usernamePassword(
+//                       credentialsId: GIT_CREDENTIAL_ID,
+//                       usernameVariable: 'GIT_USERNAME',
+//                       passwordVariable: 'GIT_PASSWORD'
+//                   )]) {
+//                       sh '''
+//                           git config --global --add safe.directory '*'
+//                           git config --global user.email "958394162@qq.com"
+//                           git config --global user.name "958394162@qq.com"
+//                           git tag -a $PROJECT_VERSION -m "$PROJECT_VERSION"
+//                           git push http://$GIT_USERNAME:$GIT_PASSWORD@github.com/$GIT_ACCOUNT/gulimall.git --tags --ipv4
+//                       '''
+//                   }
+//               }
+//           }
+//       }
 
 
   }

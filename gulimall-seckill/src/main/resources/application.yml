@@ -18,7 +18,7 @@ spring:
         port: 8719
 
   redis:
-    host: 192.168.163.142
+    host: redis-service.gulimall
     port: 6379
 
 
