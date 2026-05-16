@@ -1,12 +1,11 @@
 spring:
   application:
-    name: gateway
+    name: gulimall-gateway
 
   cloud:
     nacos:
       config:
-        server-addr: localhost:8848
-        namespace: 67ee5d01-6af9-4aa6-a2e8-936d5f6fa67f
+        server-addr: nacos-service.gulimall:8848
+        namespace: a758f750-9a5e-4159-a669-94f2f6f3ba22
       discovery:
-        server-addr: localhost:8848
-
+        server-addr: nacos-service.gulimall:8848
