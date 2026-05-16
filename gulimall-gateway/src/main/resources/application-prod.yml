@@ -3,7 +3,9 @@ server:
 
 spring:
   cloud:
-
+    nacos:
+      discovery:
+        server-addr: nacos-service.gulimall:8848
     sentinel:
       transport:
         #配置sentinel dashboard地址
